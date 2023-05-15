@@ -81,7 +81,7 @@ impl TCPPacket {
         ])
     }
 
-    pub fn get_ask(&self) -> u32 {
+    pub fn get_ack(&self) -> u32 {
         u32::from_be_bytes([
             self.buffer[8],
             self.buffer[9],
@@ -94,7 +94,7 @@ impl TCPPacket {
         self.buffer[13]
     }
 
-    pub fn get_widow_size(&self) -> u16 {
+    pub fn get_window_size(&self) -> u16 {
         u16::from_be_bytes([self.buffer[14], self.buffer[15]])
     }
 

@@ -1,0 +1,3 @@
+echo 'export CARGO_HOME=/mnt/d/Rust/.cargo' >> ~/.bashrc source ~/.bashrc
+
+:q
